@@ -5,7 +5,7 @@ const path = require('path');
 
 
 module.exports = {
-  mode: 'production',
+  mode: process.env.NODE_ENV,
   entry: './client/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -29,11 +29,11 @@ module.exports = {
           }
         }
       },
-      // {
-      //   test: /.(css|scss)$/,
-      //   exclude: [/node_modules/, /client\/stylesheets\/modules/],
-      //   use: ['style-loader', 'css-loader', 'sass-loader'],
-      // },
+      {
+        test: /.(css|scss)$/,
+        exclude: [/node_modules/, /client\/stylesheets\/modules/],
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   }
 }

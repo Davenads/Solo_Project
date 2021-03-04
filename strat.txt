@@ -1,0 +1,7 @@
+// click button , load content
+
+// content is country / info
+
+
+   start   // "nodemon server/server.js"
+   build   // "webpack"

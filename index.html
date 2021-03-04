@@ -1,16 +1,49 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>The Jim Generator</title>
+  <title>Pancakes!</title>
+  <!-- using css through reach -->
+  <!-- <link rel="stylesheet" type="text/css" href="/styles.css" /> -->
 </head>
 <body>
-  <h1>The Jim Generator</h1>
+  <p>author: David McFlappers</p>
+  <main id="main">
+    <h1 id="title">Pancakes are Perfect</h1>
+    <p class="pizzaz">How flapjacks are prepared around the world</p>
+    <figure id="img-div">
+      <img
+        id="image"
+        src="https://thecynicalchef.files.wordpress.com/2008/11/pancakes-047.jpg"
+        alt="A gorgeous big ole pile of flapjacks"
+      />
+      <figcaption id="img-caption">
+        A close-up shot of one of the hottest foods out there.
+      </figcaption>
+    </figure>
+    <section id="tribute-info">
+      <div id="shadow">
+      <h3 id="headline">A Smorgasbord of information on one of the best breakfast foods</h3>
+      </div>   
+        <p><i>
+          "I feel like a slice o' butter melting on top of a big ol' pile of flapjacks.[pause] Yeah."
+          </i></p>
+        <cite>-- Private Greg B. Miller</cite>
+      <h3>
+        If you have time, you should read more about this amazing food with its
+        <a
+          id="tribute-link"
+          href="https://en.wikipedia.org/wiki/Pancake"
+          target="_blank"
+          >Wikipedia entry</a
+        >.
+      </h3>
+    </section>
+  </main>
+  
   <div id="root"></div>
 
-  <!-- script for webpack and webpack-dev-server challenge -->
   <script src="build/bundle.js"></script>
 
-  <!-- uncomment below and comment out the tag above for gulp/browserify challenge -->
-  <!-- <script src="build/browserify-bundle.js"></script> -->
+
 </body>
 </html>
